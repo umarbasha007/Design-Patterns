@@ -1,0 +1,6 @@
+These are some instructs to follow:
+
+Use the local respository for new pull/push/.
+
+
+This is my new change
