@@ -31,8 +31,8 @@ The acronym of S O L I D is as follows :
   ```
   Subtype Requirement: 
 
-  Let *f(x)* be a property provable about objects *x* of type **T**. 
-  Then *f(y)* should be true for objects *y* of type **S** where **S** is a subtype of **T**.
+  Let f(x) be a property provable about objects x of type T. 
+  Then f(y) should be true for objects y of type S where S is a subtype of T.
 
   ```
 
