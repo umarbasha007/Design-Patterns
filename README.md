@@ -10,4 +10,4 @@ The following are the Design Patterns added:
    5. Dependency Inversion
    
  - KISS principle
- - 
+ - DRY principle
