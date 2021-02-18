@@ -18,6 +18,7 @@ namespace SingleResponsibility
             Console.WriteLine("Login");
         }
 
+        //ValidateEmail & SendEmail doesn't belong to UserService
         public virtual bool ValidateEmail(string email)
         {
             return email.Contains("@");

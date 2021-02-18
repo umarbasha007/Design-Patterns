@@ -6,11 +6,14 @@ namespace SingleResponsibility
     {
        public void Register(string email, string password)
         {
-            if (!ValidateEmail(email))
+            //Added EmailService reference
+            EmailService emailService = new EmailService();
+
+            if (!emailService.ValidateEmail(email))
                 throw new ValidationException("Email is not an email");
             var user = new User(email, password);
 
-            SendEmail(user);
+            emailService.SendEmail(user);
         }
 
         public void Login(string email, string password)
@@ -18,11 +21,6 @@ namespace SingleResponsibility
             Console.WriteLine("Login");
         }
 
-        public virtual bool ValidateEmail(string email)
-        {
-            return email.Contains("@");
-        }
-        public void SendEmail(User message) => Console.WriteLine("send message");
- 
+        //Moved ValidateEmail & SendEmail to EmailService class
     }
 }
